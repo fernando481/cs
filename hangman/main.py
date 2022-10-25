@@ -1,7 +1,22 @@
 import re
+import random
 
 # Get the answer. 
-answer = "what's up, Doc?"
+pool_file = open("hang-sample-answer-pool.txt")
+
+pool_answers = []
+
+pool_answer_line = pool_file.readline()
+
+while pool_answer_line: 
+    pool_answers.append(pool_answer_line)
+
+    pool_answer_line = pool_file.readline()
+
+pool_file.close()
+
+
+answer = random.choice(pool_answers)
 
 answer = answer.upper()
 
@@ -72,4 +87,4 @@ while current_incorrect_guesses < num_of_incorrect_guesses and False in answer_g
 if current_incorrect_guesses < num_of_incorrect_guesses:
     print("congratulation, you won ")
 else:
-    print(f"sorry,loser, the answer wa {answer}")
+    print(f"sorry,loser, the answer What's up doc  {answer}")
