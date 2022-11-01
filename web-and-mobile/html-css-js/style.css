@@ -1,0 +1,16 @@
+p
+{
+    color: hsl(13, 100%, 50%);
+}
+
+.header-background{
+    background-color: blanchedalmond;
+    color: black;
+    text-decoration: underline;
+
+}
+
+#bigger-font{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+}
